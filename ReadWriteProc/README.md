@@ -1,6 +1,6 @@
 # TestProcEntry 
 
-Test `proc_create` and `proc_remove` in the Linux Kernel 4.9. Note that APIs related Proc system change from 3.10, see detail in the reference.
+Test `read` and `write` in the `file_operations`. Note that APIs related Proc system change from 3.10, see detail in the reference.
 
 ## Module Compilation
 

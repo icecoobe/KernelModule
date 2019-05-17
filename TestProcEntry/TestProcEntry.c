@@ -7,7 +7,7 @@
 
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("mudongliangabcd@gmail.com");
-MODULE_DESCRIPTION("HelloWorld Module Template");
+MODULE_DESCRIPTION("Test Proc Entry");
 MODULE_VERSION("0.1");
 
 #define BUFSIZE  100
@@ -35,7 +35,7 @@ static struct file_operations myops =
  
 static int simple_init(void)
 {
-	ent = proc_create("mydev", 0660, NULL, &myops);
+	ent = proc_create("myproc", 0660, NULL, &myops);
 	return 0;
 }
  
